@@ -1,7 +1,13 @@
 <ul class="items">
   <p>All : <span>{{itemService.items.length}}</span></p>
   <li *ngFor="let item of itemService.items" (click)="updateItem(item.id)">
-    <span>{{item.id}}</span>{{item.name}}
+    <span>{{item.id | uppercase}}</span>{{item.name}}
   </li>
 </ul>
+<p>
+  Avaliable
+</p>
+<li *ngFor="let item of itemService.items | available" (click)="updateItem(item)">
+  <span>{{item.id}}</span> {{item.name}}
+</li>
 
