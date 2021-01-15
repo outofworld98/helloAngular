@@ -1,3 +1,16 @@
+# Angular 10
+#### nodejs install
+#### npm install -g angular-cli
+#### angular arch : module, view, component, data binding, service(view login 분리, DI)
+#### routing : component 사이에 이동, app-routing.module.ts
+#### routing parameter
+#### class
+#### module
+#### service 구조(MVC) : component - service - storage
+#### data binding : 2 way data binding , ngFor, ngModel
+#### pipe(|) : filtering, uppercase, user-define pipe
+#### style : css (web 기본 기술), 반응형 화면
+
 # AngularPetlist
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
