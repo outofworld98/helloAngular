@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
+import {Item} from "../classes/item";
 
 @Component({
   selector: 'app-item',
@@ -8,13 +9,19 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class ItemComponent implements OnInit {
   private route: ActivatedRoute;
-  private editable: boolean = false;
   private router: Router;
+  private item: Item;
+  private editable: boolean = false;
 
   constructor(route: ActivatedRoute,
               router: Router) {
     this.route = route;
     this.router = router;
+    this.item={
+      id:'',
+      name:'',
+      available: true
+    }
   }
 
   ngOnInit(): void {
@@ -25,6 +32,7 @@ export class ItemComponent implements OnInit {
   }
 
   saveItem() {
+    console.log(this.item);
     if (this.editable) {
 
     } else {
@@ -34,6 +42,6 @@ export class ItemComponent implements OnInit {
   }
 
   deleteItem() {
-
+    this.router.navigateByUrl('/home');
   }
 }

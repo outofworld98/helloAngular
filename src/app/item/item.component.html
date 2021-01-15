@@ -1,17 +1,17 @@
 <div class="items">
   <div>
     <label>ID
-      <input placeholder="ID"/>
+      <input [(ngModel)]="item.id" placeholder="ID"/>
     </label>
   </div>
   <div>
     <label>Name
-      <input placeholder="Name"/>
+      <input [(ngModel)]="item.name" placeholder="Name"/>
     </label>
   </div>
   <div>
     <label>Available
-      <input type="checkbox"/>
+      <input [(ngModel)]="item.available" type="checkbox"/>
     </label>
   </div>
   <button (click)="saveItem()">Save</button>
