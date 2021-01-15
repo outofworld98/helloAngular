@@ -1,1 +1,7 @@
-<p>home works!</p>
+<ul class="items">
+  <p>All : <span>{{itemService.items.length}}</span></p>
+  <li *ngFor="let item of itemService.items" (click)="updateItem(item.id)">
+    <span>{{item.id}}</span>{{item.name}}
+  </li>
+</ul>
+
