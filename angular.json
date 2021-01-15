@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "angularPetlist"
+  "defaultProject": "angularPetlist",
+  "cli": {
+    "analytics": "56d54c1a-d669-4829-b7fb-93b6a7d6f362"
+  }
 }
